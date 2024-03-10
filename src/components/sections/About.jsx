@@ -16,15 +16,15 @@ const About = () => {
         impactful realities. Join us in shaping the future of digital
         experiences!
       </h1>
-      <div className="w-full flex gap-5 border-t-[1px] pt-10 mt-20 border-[#a1b562]">
-        <div className="w-1/2">
+      <div className="w-full flex lg:flex-row flex-col gap-5 border-t-[1px] pt-10 mt-20 border-[#a1b562]">
+        <div className="lg:w-1/2 w-full">
           <div className="text-6xl">Our approach : </div>
           <button className="px-10 py-6 bg-zinc-900 rounded-full text-white flex gap-10 items-center mt-5">
             Read More
             <div className="h-2 w-2 bg-zinc-100 rounded-full "></div>
           </button>
         </div>
-        <div className="w-1/2 h-[70vh] rounded-3xl bg-[#b0c859]"></div>
+        <div className="lg:w-1/2 w-full h-[70vh] rounded-3xl bg-[#b0c859]"></div>
       </div>
     </div>
   );

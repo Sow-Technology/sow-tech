@@ -39,7 +39,7 @@ const Marquee = () => {
             {titles.map((title, index) => (
               <h1
                 key={index}
-                className="text-[15vw] uppercase mb-[-50px] leading-none fg font-semibold pt-10"
+                className="text-[15vw] uppercase lg:mb-[-50px] leading-none fg font-semibold pt-10"
               >
                 {title}&nbsp;
               </h1>

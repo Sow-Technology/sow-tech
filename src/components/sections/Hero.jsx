@@ -8,9 +8,9 @@ const Hero = () => {
       data-scroll
       data-scroll-section
       data-scroll-speed="-.5"
-      className="w-full h-screen bg-zinc-900 flex flex-col  justify-center pt-2"
+      className="w-full lg:h-screen bg-zinc-900 flex flex-col  justify-center pt-2"
     >
-      <div className="textstructure mt-52 px-20">
+      <div className="textstructure my-10 lg:mt-52 px-20">
         {["Beyond the", "Screen. We ", "Build Experiences"].map(
           (item, index) => (
             <div className="masker" key={index}>
@@ -31,7 +31,7 @@ const Hero = () => {
           )
         )}
       </div>
-      <div className="border-t-[1px] mt-20 border-zinc-700 flex justify-between items-center py-5 px-20 w-full">
+      <div className="border-t-[1px] mt-20 border-zinc-700 flex justify-between items-center py-5 px-20 w-full flex-wrap gap-y-4">
         {[
           "For public and private and private companies",
           "From the first pitch to IPO",
@@ -43,7 +43,7 @@ const Hero = () => {
             {item}
           </p>
         ))}
-        <div className="start flex items-center gap-2.5">
+        <div className="start flex items-center gap-2.5 lg:flex-none flex-1">
           <div className="px-5 py-2 border-[2px] border-zinc-400 uppercase font-light text-sm rounded-full ">
             start the project
           </div>

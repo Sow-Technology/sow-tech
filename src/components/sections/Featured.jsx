@@ -18,11 +18,11 @@ const Featured = () => {
         <div className="text-8xl tracking-tight">Our Services</div>
       </div>
       <div className="px-20">
-        <div className="cards flex gap-5 gap-y-20 w-full mt-10 flex-wrap">
+        <div className="cards flex gap-5 gap-y-20 w-full mt-10 flex-wrap lg:flex-row flex-col">
           <div
             onMouseEnter={() => setIsWebHovering(true)}
             onMouseLeave={() => setIsWebHovering(false)}
-            className="cardcontainer w-1/2 rounded-xl h-[75vh]   flex-1 min-w-[40%] relative"
+            className="cardcontainer w-full lg:w-1/2 rounded-xl h-[75vh]   flex-1 min-w-[40%] relative"
           >
             <div className="flex gap-3 items-center  text-xl font-medium w-max px-5 py-5 rounded-xl mb-3">
               <div className="w-2 h-2 bg-zinc-100 rounded-full"></div>
@@ -34,7 +34,7 @@ const Featured = () => {
             >
               <Lottie animationData={webAnimation} loop={true} />
             </div>
-            <h2 className="absolute  left-full -translate-x-1/3 top-1/2  leading-none tracking-tight font-semibold  z-[9] text-8xl -translate-y-1/3 fg text-[#bee239] flex overflow-hidden">
+            <h2 className="absolute left-1/2 lg:left-full -translate-x-1/3 top-1/2  leading-none tracking-tight font-semibold  z-[9] text-8xl lg:-translate-y-1/3 fg text-[#bee239] flex overflow-hidden">
               {"WEB".split("").map((item, index) => (
                 <motion.span
                   key={index}
@@ -51,9 +51,9 @@ const Featured = () => {
           <div
             onMouseEnter={() => setIsAppHovering(true)}
             onMouseLeave={() => setIsAppHovering(false)}
-            className="cardcontainer w-1/2 rounded-xl h-[75vh]   flex-1 min-w-[40%] relative"
+            className="cardcontainer w-full lg:w-1/2 rounded-xl h-[75vh]   flex-1 min-w-[40%] relative"
           >
-            <h2 className="absolute  right-full translate-x-1/2 top-1/2  leading-none tracking-tight font-semibold  z-[9] text-8xl -translate-y-1/3 fg text-[#bee239] flex overflow-hidden">
+            <h2 className="absolute right-1/2 lg:right-full translate-x-1/2 top-1/2  leading-none tracking-tight font-semibold  z-[9] text-8xl -translate-y-1/3 fg text-[#bee239] flex overflow-hidden">
               {"APP".split("").map((item, index) => (
                 <motion.span
                   key={index}
@@ -64,7 +64,7 @@ const Featured = () => {
                 >
                   {item}
                 </motion.span>
-              ))}{" "}
+              ))}
             </h2>
             <div
               onMouseEnter={() => setIsXRHovering(true)}
@@ -84,7 +84,7 @@ const Featured = () => {
           <div
             onMouseEnter={() => setIsXRHovering(true)}
             onMouseLeave={() => setIsXRHovering(false)}
-            className="cardcontainer w-1/2 rounded-xl h-[75vh]   flex-1 min-w-[40%] relative "
+            className="cardcontainer w-full lg:w-1/2 rounded-xl h-[75vh]   flex-1 min-w-[40%] relative "
           >
             <div className="flex gap-3 items-center  text-xl font-medium w-max px-5 py-5 rounded-xl mb-3">
               <div className="w-2 h-2 bg-zinc-100 rounded-full"></div>
@@ -100,7 +100,7 @@ const Featured = () => {
                 className="h-full"
               />
             </div>
-            <h2 className="absolute  left-full -translate-x-1/3 top-1/2  leading-none tracking-tight font-semibold  z-[9] text-8xl -translate-y-1/3 fg text-[#bee239] flex overflow-hidden">
+            <h2 className="absolute left-1/2 lg:left-full -translate-x-1/3 top-1/2  leading-none tracking-tight font-semibold  z-[9] text-8xl -translate-y-1/3 fg text-[#bee239] flex overflow-hidden">
               {"XR".split("").map((item, index) => (
                 <motion.span
                   key={index}
@@ -115,7 +115,7 @@ const Featured = () => {
             </h2>
           </div>
           <div
-            className="cardcontainer w-1/2 rounded-xl h-[75vh]   flex-1 min-w-[40%] relative "
+            className="cardcontainer w-full lg:w-1/2 rounded-xl h-[75vh]   flex-1 min-w-[40%] relative "
             onMouseEnter={() => setIsTestingHovering(true)}
             onMouseLeave={() => setIsTestingHovering(false)}
           >
@@ -129,7 +129,7 @@ const Featured = () => {
             >
               <Lottie animationData={testingAnimation} loop={true} />
             </div>
-            <h2 className="absolute  right-full translate-x-1/2 top-1/2  leading-none tracking-tight font-semibold  z-[9] text-8xl -translate-y-1/3 fg text-[#bee239] flex overflow-hidden">
+            <h2 className="absolute right-1/2 lg:right-full translate-x-1/2 top-1/2  leading-none tracking-tight font-semibold  z-[9] text-7xl -translate-y-1/3 fg text-[#bee239] flex overflow-hidden">
               {"SOFTWARE".split("").map((item, index) => (
                 <motion.span
                   key={index}

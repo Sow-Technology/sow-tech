@@ -6,11 +6,11 @@ const Footer = () => {
   return (
     <div
       data-scroll
-      data-scroll-section
-      data-scroll-speed="0.5"
-      className="w-full flex gap-5 h-screen bg-zinc-900 p-20"
+      // data-scroll-section
+      // data-scroll-speed="0.5"
+      className="w-full flex lg:flex-row flex-col gap-5 h-screen bg-zinc-900 p-20"
     >
-      <div className="w-1/2 fg flex items-start justify-between flex-col h-full">
+      <div className="lg:w-1/2 w-full fg flex items-start justify-between flex-row lg:flex-col h-full">
         <div className="heading">
           <h3 className="text-[6vw] uppercase font-semibold leading-none ">
             Eye-
@@ -20,7 +20,13 @@ const Footer = () => {
           </h3>
         </div>
         <div className="invert">
-          <Image src="/logo.png" alt="" width={100} height={100} />
+          <Image
+            src="/logo.png"
+            alt=""
+            width={100}
+            height={100}
+            className="h-[100px] w-[100px]"
+          />
         </div>
       </div>
       <div className="w-1/2 h-full flex flex-col justify-between">
