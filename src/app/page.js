@@ -22,6 +22,13 @@ const Page = () => {
         const LocomotiveScroll = module.default;
 
         const scroll = new LocomotiveScroll({
+          smooth: true,
+          mobile: {
+            smooth: true,
+          },
+          tablet: {
+            smooth: true,
+          },
           // Locomotive Scroll options can be configured here
           // For example: smooth scroll, scrollbar, etc.
         });

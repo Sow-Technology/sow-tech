@@ -4,7 +4,8 @@ const About = () => {
   return (
     <div
       data-scroll-section
-      data-scroll-speed="-.1"
+      data-scroll-speed="-.5"
+      data-scroll-offest="0,-5"
       data-scroll
       className="p-20 relative z-20 w-full bg-[#cdea68] rounded-tl-3xl rounded-tr-3xl text-black fn"
     >

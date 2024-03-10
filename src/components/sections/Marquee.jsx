@@ -26,7 +26,6 @@ const Marquee = () => {
     <div
       data-scroll
       data-scroll-section
-      data-scroll-offset="-50"
       className="w-full py-20 bg-[#004d43] rounded-tl-3xl rounded-tr-3xl relative z-10"
     >
       <motion.div className="text border-zinc-300 border-t-2 border-b-2 flex whitespace-nowrap overflow-x-scroll overflow-y-hidden no-scrollbar">
