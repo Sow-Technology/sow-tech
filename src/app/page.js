@@ -14,23 +14,23 @@ import Loading from "@/components/Loading";
 const Page = () => {
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    // Simulating a loading delay, replace the setTimeout with your actual data fetching logic
-    const loadingTimeout = setTimeout(() => {
-      // Set isLoading to false after the delay
-      setIsLoading(false);
-    }, 2000); // 2000 milliseconds (2 seconds) delay, adjust as needed
+  // useEffect(() => {
+  //   // Simulating a loading delay, replace the setTimeout with your actual data fetching logic
+  //   const loadingTimeout = setTimeout(() => {
+  //     // Set isLoading to false after the delay
+  //     setIsLoading(false);
+  //   }, 2000); // 2000 milliseconds (2 seconds) delay, adjust as needed
 
-    // Cleanup the timeout to avoid memory leaks
-    return () => clearTimeout(loadingTimeout);
-  }, []); // Empty dependency array ensures useEffect runs only once
+  //   // Cleanup the timeout to avoid memory leaks
+  //   return () => clearTimeout(loadingTimeout);
+  // }, []); // Empty dependency array ensures useEffect runs only once
 
   useEffect(() => {
     // Check if window is defined to avoid server-side rendering issues
     if (typeof window !== "undefined") {
       // Import Locomotive Scroll only if window is defined
       import("locomotive-scroll").then((LocomotiveScroll) => {
-        const scroll = new LocomotiveScroll.default({
+        const scroll = new LocomotiveScroll({
           // Locomotive Scroll options can be configured here
           // For example: smooth scroll, scrollbar, etc.
         });
